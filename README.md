@@ -46,14 +46,13 @@ features, and linear LDA. The core runtime implementation is in
 ## Repository contents
 
 This intentionally small repository contains only the main demonstration
-notebook, the streaming inference implementation, the final research summary,
-and the files needed to install the Python dependencies:
+notebook, the streaming inference implementation, and the files needed to
+install the Python dependencies:
 
 | Path | Purpose |
 |---|---|
 | [`rt_pipeline.py`](./rt_pipeline.py) | Causal online preprocessing and inference pipeline |
 | [`Motor_Imagery_EEG_Research_Project.ipynb`](./Motor_Imagery_EEG_Research_Project.ipynb) | Main research notebook |
-| [`FINAL_REPORT.md`](./FINAL_REPORT.md) | Research summary and results |
 | [`requirements.txt`](./requirements.txt) | Python dependencies |
 
 Large raw recordings, caches, virtual environments, generated models, logs,
@@ -85,33 +84,9 @@ eeg-motor-movementimagery-dataset-1.0.0/files/
 The dataset is not included in this repository because of its size and
 distribution terms.
 
-## Reproducibility
-
-Example benchmark commands:
-
-```bash
-python run_complete_rigorous_benchmark.py
-python run_adaptive_channels.py
-python run_eegnet_groupkfold.py
-```
-
-Most experiments expect the PhysioNet data directory described above and can
-take substantial time and memory. GPU-specific scripts require a compatible
-PyTorch installation. Review each script's command-line options before running
-long experiments.
-
-## Methodology
-
-- Epochs are taken from 1–4 seconds after the cue and filtered to 8–30 Hz.
-- Subject-wise `GroupKFold` prevents subject leakage.
-- Channel and adaptation choices are selected inside training folds.
-- Adaptation is label-free for held-out subjects.
-- Results are reported with subject-level comparisons and corrected statistical
-  tests where applicable.
-
-Known negative results, evaluation corrections, and the full protocol are
-documented in [`PROJECT_METHODOLOGY.md`](./PROJECT_METHODOLOGY.md) and
-[`PERSONALIZED_ADAPTIVE_SPARSE_EEG_DOCUMENTATION.md`](./PERSONALIZED_ADAPTIVE_SPARSE_EEG_DOCUMENTATION.md).
+The notebook contains the research workflow and requires the separately
+downloaded dataset. The streaming module can be imported independently for
+real-time preprocessing and inference experiments.
 
 ## Citation and dataset
 
