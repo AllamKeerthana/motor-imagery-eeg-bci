@@ -1,5 +1,0 @@
-task,n_folds,acc64,acc16,diff,p_raw,p_holm
-execution_bilateral,5,0.7054,0.6428,-0.0625,0.0036,0.0079
-execution_unilateral,5,0.6223,0.5617,-0.0606,0.0026,0.0079
-imagery_bilateral,5,0.6403,0.5816,-0.0587,0.0003,0.0013
-imagery_unilateral,5,0.6004,0.5737,-0.0267,0.0467,0.0467

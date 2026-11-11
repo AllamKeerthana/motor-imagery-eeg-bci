@@ -1,5 +1,0 @@
-variant,execution_bilateral,execution_unilateral,imagery_bilateral,imagery_unilateral
-sm_fb0_pool0,0,1,2,1
-sm_fb0_pool1,0,1,2,1
-sm_fb1_pool0,1,1,0,0
-sm_fb1_pool1,4,2,1,3

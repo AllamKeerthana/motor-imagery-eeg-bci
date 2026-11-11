@@ -1,5 +1,0 @@
-task,n_subjects,acc0,acc10,diff,p_raw,p_holm
-execution_bilateral,109,0.6927,0.7427,0.0501,0.0,0.0
-execution_unilateral,109,0.6226,0.6273,0.0046,0.774,1.0
-imagery_bilateral,109,0.6109,0.6319,0.0211,0.0072,0.0217
-imagery_unilateral,109,0.5926,0.5874,-0.0052,0.6415,1.0

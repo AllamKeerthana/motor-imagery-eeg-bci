@@ -43,23 +43,18 @@ filter, common-average reference, online covariance re-centering, tangent-space
 features, and linear LDA. The core runtime implementation is in
 [`rt_pipeline.py`](./rt_pipeline.py).
 
-## Repository structure
+## Repository contents
+
+This intentionally small repository contains only the main demonstration
+notebook, the streaming inference implementation, the final research summary,
+and the files needed to install the Python dependencies:
 
 | Path | Purpose |
 |---|---|
 | [`rt_pipeline.py`](./rt_pipeline.py) | Causal online preprocessing and inference pipeline |
-| [`all_tasks_adaptive_sparse_common.py`](./all_tasks_adaptive_sparse_common.py) | Shared loading, preprocessing, cross-validation, and evaluation utilities |
-| [`adaptive_sparse_fbcsp.py`](./adaptive_sparse_fbcsp.py) | Adaptive sparse-channel classical baselines |
-| [`run_complete_rigorous_benchmark.py`](./run_complete_rigorous_benchmark.py) | Main benchmark orchestration |
-| [`run_adaptive_channels.py`](./run_adaptive_channels.py) | Channel-selection and adaptation experiments |
-| [`run_eegnet_gpu.py`](./run_eegnet_gpu.py) | EEGNet training/evaluation |
-| [`personalized_channel_experiment.py`](./personalized_channel_experiment.py) | Personalised channel-selection experiment |
-| [`outputs_final/`](./outputs_final/) | Small, selected final metrics and verification summaries |
-| [`Motor_Imagery_EEG_Project_Report.md`](./Motor_Imagery_EEG_Project_Report.md) | Detailed project report |
+| [`Motor_Imagery_EEG_Research_Project.ipynb`](./Motor_Imagery_EEG_Research_Project.ipynb) | Main research notebook |
 | [`FINAL_REPORT.md`](./FINAL_REPORT.md) | Research summary and results |
-| [`EEGNet_Subject_Independent.ipynb`](./EEGNet_Subject_Independent.ipynb) | Subject-independent EEGNet notebook |
-| [`EEGNet_Subject_Wise.ipynb`](./EEGNet_Subject_Wise.ipynb) | Subject-wise EEGNet notebook |
-| [`Motor_Imagery_EEG_Research_Project.ipynb`](./Motor_Imagery_EEG_Research_Project.ipynb) | Exploratory research notebook |
+| [`requirements.txt`](./requirements.txt) | Python dependencies |
 
 Large raw recordings, caches, virtual environments, generated models, logs,
 archives, and PDFs are intentionally excluded from version control. The
