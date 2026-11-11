@@ -1,0 +1,17 @@
+task_family,n_per_class,mean,count
+execution_bilateral,0,0.693,109
+execution_bilateral,2,0.712,109
+execution_bilateral,5,0.724,109
+execution_bilateral,10,0.743,109
+execution_unilateral,0,0.623,109
+execution_unilateral,2,0.63,109
+execution_unilateral,5,0.627,109
+execution_unilateral,10,0.627,109
+imagery_bilateral,0,0.611,109
+imagery_bilateral,2,0.619,109
+imagery_bilateral,5,0.623,109
+imagery_bilateral,10,0.632,109
+imagery_unilateral,0,0.593,109
+imagery_unilateral,2,0.596,109
+imagery_unilateral,5,0.596,109
+imagery_unilateral,10,0.587,109

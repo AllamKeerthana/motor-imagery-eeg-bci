@@ -1,0 +1,9 @@
+task,vs,nested,other,diff,p_raw,folds_better,p_holm
+execution_bilateral,t-test16 baseline,0.7766,0.6967,0.0799,0.0089,5,0.0534
+execution_bilateral,64ch,0.7766,0.7614,0.0152,0.2639,4,0.5278
+execution_unilateral,t-test16 baseline,0.6998,0.6171,0.0827,0.0063,5,0.0467
+execution_unilateral,64ch,0.6998,0.7002,-0.0004,0.9584,2,0.9584
+imagery_bilateral,t-test16 baseline,0.6684,0.6141,0.0544,0.0058,5,0.0467
+imagery_bilateral,64ch,0.6684,0.6532,0.0152,0.0739,4,0.3693
+imagery_unilateral,t-test16 baseline,0.6372,0.5936,0.0435,0.1025,4,0.4101
+imagery_unilateral,64ch,0.6372,0.6294,0.0078,0.1724,4,0.5172

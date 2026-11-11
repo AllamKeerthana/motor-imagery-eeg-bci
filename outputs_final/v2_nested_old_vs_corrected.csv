@@ -1,0 +1,5 @@
+task_family,v1_accuracy,v2_accuracy,v2_balanced_acc,v2_macro_f1,v2_folds,diff_v2_minus_v1
+execution_bilateral,0.7766,0.795,0.7951,0.795,5,0.0184
+execution_unilateral,0.6998,0.7156,0.7155,0.7155,5,0.0157
+imagery_bilateral,0.6684,0.6672,0.6672,0.6671,5,-0.0013
+imagery_unilateral,0.6372,0.6405,0.6405,0.6404,5,0.0033

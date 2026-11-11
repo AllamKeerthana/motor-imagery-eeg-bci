@@ -1,0 +1,5 @@
+task_family,A_zerophase_batch,B_causal_batch,N_causal_no_adaptation,C_causal_online_w0=5,K_online_nested
+execution_bilateral,0.744,0.755,0.698,0.728,0.756
+execution_unilateral,0.695,0.695,0.647,0.632,0.687
+imagery_bilateral,0.66,0.666,0.6,0.624,0.659
+imagery_unilateral,0.631,0.635,0.597,0.604,0.627

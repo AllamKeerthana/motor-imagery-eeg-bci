@@ -1,0 +1,56 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.env
+.pytest_cache/
+.mypy_cache/
+
+# Large datasets and derived caches
+eeg-motor-movementimagery-dataset-1.0.0/
+cache_epochs/
+cache_raw16/
+cache_raw/
+*.edf
+*.event
+*.npz
+*.npy
+
+# Generated model and replay artifacts
+deploy/
+deploy_rt/
+submission/
+submission_v2/
+four_models/
+*.onnx
+*.pt
+*.pth
+
+# Archives and generated documents
+*.zip
+*.pdf
+thesis/
+
+# Experiment logs and temporary output
+*.log
+*.stderr.log
+*.stdout.log
+timing_out.txt
+status.txt
+audit/
+
+# Generated result directories (selected small final metrics are force-added)
+outputs_*/
+subject_wise_benchmark/
+
+# Keep only source notebooks in the root when explicitly added
+*.ipynb
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

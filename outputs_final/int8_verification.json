@@ -1,0 +1,63 @@
+{
+ "execution_bilateral": {
+  "fp32": {
+   "accuracy": 0.7563451776649747,
+   "run_latency_ms_median_of_3_passes": 0.43951000019054237,
+   "file_kb": 5.02
+  },
+  "int8": {
+   "accuracy": 0.7563451776649747,
+   "run_latency_ms_median_of_3_passes": 0.7470010002725758,
+   "file_kb": 8.8
+  },
+  "prediction_agreement": 0.9878172588832488,
+  "max_abs_logit_diff": 2.2802743911743164,
+  "n_windows": 985
+ },
+ "execution_unilateral": {
+  "fp32": {
+   "accuracy": 0.6068895643363729,
+   "run_latency_ms_median_of_3_passes": 0.28242733378040913,
+   "file_kb": 5.02
+  },
+  "int8": {
+   "accuracy": 0.601823708206687,
+   "run_latency_ms_median_of_3_passes": 0.8399606664897874,
+   "file_kb": 8.8
+  },
+  "prediction_agreement": 0.9685916919959473,
+  "max_abs_logit_diff": 2.6678712368011475,
+  "n_windows": 987
+ },
+ "imagery_bilateral": {
+  "fp32": {
+   "accuracy": 0.6656184486373166,
+   "run_latency_ms_median_of_3_passes": 0.3012963342674387,
+   "file_kb": 5.02
+  },
+  "int8": {
+   "accuracy": 0.6687631027253669,
+   "run_latency_ms_median_of_3_passes": 0.8646603335121957,
+   "file_kb": 8.8
+  },
+  "prediction_agreement": 0.9779874213836478,
+  "max_abs_logit_diff": 4.0871405601501465,
+  "n_windows": 954
+ },
+ "imagery_unilateral": {
+  "fp32": {
+   "accuracy": 0.6226415094339622,
+   "run_latency_ms_median_of_3_passes": 0.2582400005000333,
+   "file_kb": 5.02
+  },
+  "int8": {
+   "accuracy": 0.6268343815513627,
+   "run_latency_ms_median_of_3_passes": 0.9186206672651073,
+   "file_kb": 8.8
+  },
+  "prediction_agreement": 0.9706498951781971,
+  "max_abs_logit_diff": 1.7761709690093994,
+  "n_windows": 954
+ },
+ "note": "Same windows, same preprocessing, 1 intra-op thread; latency = onnxruntime session.run on a single window (excludes CAR/scaling). Static QDQ int8 quantisation with 200 calibration windows from TRAIN subjects. Measured while a GPU training job was running on another core; not a Raspberry Pi result."
+}
